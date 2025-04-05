@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Satyam Shorrf Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/android-chrome-192x192.png">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /*======================================
+//--//-->   ABOUT
+======================================*/
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
+
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: 0.5rem 0 1.2rem;
+      border-radius: 0;
+      height: 0.7rem;
+    }
+
+    .skill-mf .progress .progress-bar {
+      height: 0.7rem;
+      background-color: #ffbd39;
+    }
+
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+
+      to {
+        width: 0;
+      }
+    }
+
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    @media screen and (orientation: portrait) {
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      .order-md-last {
+        visibility: hidden;
+      }
+
+      .about-img img {
+        content: url("images/cropped-1me.png");
+      }
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Satyam Shorrf</a>
+
+
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+        Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link">
+              <span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link">
+              <span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume-section" class="nav-link">
+              <span>Work</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link">
+              <span>Projects</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#send-message" class="nav-link">
+              <span>Contact</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home-section" class="hero">
+    <div class="home-slider  owl-carousel">
+      <div class="slider-item ">
+        <div class="overlay"></div>
+        <div class="container">
+          <d class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img"
+              style="background-image:url(images/satyam.png); background-size: cover; background-position: center; top: -60px; width: 40%; height: 15%;">
+            </div>
+
+
+
+
+            <div class="one-forth d-flex  align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm
+                  <span>Satyam Shorrf</span>
+                </h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement = document.getElementById('typing-animation');
+
+                  // Create an array of typing text
+                  const typingTexts = [
+                    'BCA Student',
+                    'Mechanical & Software Engineer',
+                    'AI Engineer',
+                    'ML Engineer',
+                    'Frontend Developer (React, Next.js)',
+                    'Backend Developer (Node.js, Express)',
+                    'Full-Stack Developer (MERN, PERN)',
+                    'Mobile App Developer (Flutter, React Native)',
+                    'DevOps Engineer (AWS, CI/CD)',
+                    'Robotics & Drones Developer',
+                  ]
+
+
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 100); // Decreased delay to speed up the typing animation
+                    }
+
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 100); // Adjusted delay accordingly
+                  }
+
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script><br><br>
+                <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                <!-- <br> -->
+                <p>
+                  <a href="https://www.instagram.com/satyamshorrf/" class="btn btn-primary py-3 px-4">My Instagram</a>
+                  <a href="https://www.linkedin.com/in/satyamshorrf/"
+                    class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="row d-flex align-items-stretch">
+          <!-- <div class="row d-flex"> -->
+
+
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+                <p>
+                  Hello! I'm <strong>Satyam Shorrf</strong>, an engineering professional with a unique blend of
+                  expertise in both Mechanical and Software Engineering. With a strong academic foundation and hands-on
+                  industry experience, I bring a multidisciplinary approach to problem-solving and technology
+                  development.
+                </p>
+
+                <h3>🎓 Academic Background</h3>
+                <ul>
+                  <li>🧠 Pursuing Bachelor of Software Engineering from T.P. College, Madhepura – Scored 85.75% | CGPA:
+                    8.03</li>
+                  <li>🔧 Diploma in Mechanical Engineering from Exalt College of Polytechnic, Vaishali</li>
+                </ul>
+
+                <h3>💻 Software Development Skills</h3>
+                <ul>
+                  <li><strong>Languages:</strong> TypeScript, JavaScript, C, C++, Java, VB.NET</li>
+                  <li><strong>Frameworks:</strong> React, Next.js, Node.js, Express, React Native, Flutter</li>
+                  <li><strong>Styling & UI:</strong> TailwindCSS, React-Three-Fiber, Three.js</li>
+                  <li><strong>Backend & Databases:</strong> Firebase, MongoDB, PostgreSQL</li>
+                  <li><strong>DevOps & Cloud:</strong> AWS, CI/CD, Docker, Version Control (Git)</li>
+                </ul>
+
+                <h3>📱 Full-Stack & Mobile App Developer</h3>
+                <ul>
+                  <li>Specializing in MERN & PERN stacks</li>
+                  <li>Skilled in Flutter and React Native for cross-platform mobile apps</li>
+                </ul>
+
+                <h3>🧠 Passionate Explorer in Advanced Tech</h3>
+                <ul>
+                  <li>Enthusiast in AI, Machine Learning, Deep Learning, and OpenCV</li>
+                  <li>Exploring Blockchain, Autonomous Systems, Robotics, and Drone Navigation (ROS)</li>
+                </ul>
+
+                <h3>🏭 Industry Experience</h3>
+                <ul>
+                  <li>Ex-TATA Motors Apprentice – Hands-on experience in the automotive domain</li>
+                  <li>Field Experience with VMukti – Webcasting for Lok Sabha Elections</li>
+                </ul>
+
+                <p>
+                  🚀 I’m always curious, always learning. Currently diving deeper into cutting-edge technologies and
+                  real-world applications that bridge software with robotics and intelligent systems.
+                </p>
+
+                <p>
+                  🌐 Let's connect and explore the endless possibilities of technology together! Feel free to reach out
+                  to me on LinkedIn or Instagram.
+              </div>
+            </div>
+
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
+                <p>
+                  <a href="https://www.linkedin.com/in/satyamshorrf/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+
+
+
+      <div class="row">
+        <h1 class="big-4">Experience</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+
+      <!-- Row 1: Left -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">May 2024</span>
+            <h2>Webcasting Technician</h2>
+            <h4>Tech Team Member</h4>
+            <span class="position">VMukti Solutions Pvt. Ltd.</span>
+            <div class="mt-4">
+              <ul>
+                <li>Played a key role in providing technical support for live webcasting during the Lok Sabha elections.
+                  Managed smooth streaming operations and real-time monitoring of voting processes, ensuring
+                  transparency and timely reporting during the election period.</li>
+                <li>Successfully planned and executed induction programs, providing new members with crucial information
+                  about the organization's goals and values.</li>
+                <li>Played a crucial role in promoting VMukti events and actively collaborated with cross-functional
+                  teams to deliver high-quality projects, fostering teamwork and innovation.</li>
+                <li>Actively engaged with the VMukti community, assisted in workshops, and contributed to planning and
+                  managing VMukti events, ensuring their success and growth.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">September 2022 - September 2023</span>
+            <h2>Quality Engineer</h2>
+            <h4>Apprentice</h4>
+            <span class="position">Tata Motors Passenger Vehicle Pvt. Ltd.</span>
+            <div class="mt-4">
+              <ul>
+                <li>Contributed to automotive production processes, ensuring high-quality standards and hands-on
+                  experience in vehicle assembly.</li>
+                <li>Addressed client issues and queries, ensuring seamless integration with their platform and local
+                  systems.</li>
+                <li>Planned and executed induction programs, providing new members insights into the organization's
+                  goals.</li>
+                <li>Collaborated with cross-functional teams to deliver quality projects and support Tata Motors events.
+                </li>
+                <li>Engaged with the Tata Motors community through workshops and event planning.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br>
+      <br>
+
+      <div class="row">
+        <h1 class="big-4">Education</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2023–2026</span>
+            <h2>Bachelor of Computer Applications</h2>
+            <span class="position">Bhupendra Narayan Mandal University</span>
+            <p class="mt-4">Pursuing.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2021–2023</span>
+            <h2>Higher Secondary School</h2>
+            <span class="position">BSEB (PCM)</span>
+            <p class="mt-4">Second Division.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2019–2022</span>
+            <h2>Diploma in Mechanical (Automobile Engineering)</h2>
+            <span class="position">SBTE</span>
+            <p class="mt-4">First Division.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2019</span>
+            <h2>Secondary School</h2>
+            <span class="position">BSEB</span>
+            <p class="mt-4">Second Division.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center ftco-animate">
+          <p>
+            <a href="https://drive.google.com/file"
+              class="btn btn-primary py-4 px-5">Download CV</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+
+
+
+    <div class="hid" style="visibility:hidden">
+      <div class="container">
+        <div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Intership</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Certification</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <!-- <div class="container"> -->
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>Here's my<span>
+              <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+            </span>
+          </h2>
+          <div class="heading">
+            <h4>
+              I love to code &amp; create awesome things.
+            </h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <!-- Contact Section Heading -->
+  
+
+      <!-- Contact Info Cards -->
+      <div class="row d-flex contact-info mb-5">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+              <h1 class="big big-2">Projects</h1>
+              <h2 class="mb-4">Projects</h2>
+              <p>Here are a few projects I've built recently.</p>
+            </div>
+          </div>
+        
+          <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+              <div class="align-self-stretch box p-4 position-relative w-100 shadow rounded text-center">
+                <div class="d-flex justify-content-between mb-3">
+                  <a href="https://live-demo-link1.com" class="btn btn-sm btn-success" target="_blank">Live</a>
+                  <a href="https://github.com/yourusername/project1" class="btn btn-sm btn-dark" target="_blank">GitHub</a>
+                </div>
+                <h3 class="mb-3">Project One</h3>
+                <p>A short description about what this project does and the tech used.</p>
+              </div>
+            </div>
+        
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+              <div class="align-self-stretch box p-4 position-relative w-100 shadow rounded text-center">
+                <div class="d-flex justify-content-between mb-3">
+                  <a href="https://live-demo-link2.com" class="btn btn-sm btn-success" target="_blank">Live</a>
+                  <a href="https://github.com/yourusername/project2" class="btn btn-sm btn-dark" target="_blank">GitHub</a>
+                </div>
+                <h3 class="mb-3">Project Two</h3>
+                <p>A short description about what this project does and the tech used.</p>
+              </div>
+            </div>
+        
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
+              <div class="align-self-stretch box p-4 position-relative w-100 shadow rounded text-center">
+                <div class="d-flex justify-content-between mb-3">
+                  <a href="https://live-demo-link3.com" class="btn btn-sm btn-success" target="_blank">Live</a>
+                  <a href="https://github.com/yourusername/project3" class="btn btn-sm btn-dark" target="_blank">GitHub</a>
+                </div>
+                <h3 class="mb-3">Project Three</h3>
+                <p>A short description about what this project does and the tech used.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+
+      <div class="container">
+        <div class="que" id="send-message">
+          <!-- Contact Info Cards -->
+          <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+              <h1 class="big big-2">Contact</h1>
+              <h2 class="mb-4">Contact Me</h2>
+              <p>Below are the details to reach out to me!</p>
+            </div>
+          </div>
+
+          <div class="row d-flex contact-info mb-5">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-map-signs"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p><b>Pune Maharashtra India</b></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">Contact Number</h3>
+                <p><a href="tel://1234567920">Click Here</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a href="mailto:example@gmail.com">Click Here</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-globe"></span>
+                </div>
+                <h3 class="mb-4">Download Resume</h3>
+                <p><a href="resume.pdf">Click Here</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Section -->
+          <div class="que" id="send-message">
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a<span>
+                  Question?
+                </span>
+              </h2>
+              <div class="que" id="send-message">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="16b588e0-7a78-4add-84b3-11af07af3de4">
+                  <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                    <div class="col-12">
+                      <label for="fullname" class="form-label">Full Name
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email
+                        <span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                          </svg>
+                        </span>
+                        <input type="email" class="form-control" id="email" name="email" value="" required="required">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                        </span>
+                        <input type="tel" class="form-control" id="phone" name="phone" value="">
+                      </div>
+                    </div><br>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message
+                        <span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid"><br>
+                        <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <br>
+        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li class="ftco-animate normal-txt">Find me on
+          </li>
+          <li class="ftco-animate">
+            <a href="https://www.linkedin.com/in/satyamshorrf/">
+              <span class="icon-linkedin"></span></a>
+          </li>
+          <li class="ftco-animate">
+            <a href="https://twitter.com/satyamshorrf">
+              <span class="icon-twitter"></span></a>
+          </li>
+          <li class="ftco-animate">
+            <a href="https://www.instagram.com/satyamshorrf">
+              <span class="icon-instagram"></span></a>
+          </li>
+        </ul>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p style>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved |
+            <i class="icon-heart color-danger" aria-hidden="true"></i>
+
+            <a href="https://satyamshorrf.github.io/Amit-Portfolio/" target="_blank">Satyam Shorrf</a>
+            <i class="icon-heart color-danger" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    function gitClick() {
+      window.location.href = 'https://github.com/satyamshorrf';
+    }
+  </script>
+
+</body>
+
+</html>
